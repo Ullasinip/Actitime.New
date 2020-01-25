@@ -1,0 +1,6 @@
+package random;
+
+class ProgramwithoutMain
+{
+
+}

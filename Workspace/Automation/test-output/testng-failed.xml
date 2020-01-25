@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.actitime.test.ModifyCustomerParameters">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="testModifyCustomer"/>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.actitime.test.ModifyCustomerParameters -->
+      <class name="com.actitime.test.DeleteCustomerParameters">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="testDeleteCustomer"/>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.actitime.test.DeleteCustomerParameters -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
